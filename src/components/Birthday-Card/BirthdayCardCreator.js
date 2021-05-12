@@ -4,14 +4,11 @@ import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import AddIcon from '@material-ui/icons/Add';
-import PageviewIcon from '@material-ui/icons/Pageview';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Link }from "react-router-dom"
  
 const useStyles = makeStyles((theme) => ({
   root: {
