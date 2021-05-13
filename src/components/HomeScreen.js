@@ -19,7 +19,7 @@ const HomeScreen = () => {
       
       <Container maxWidth="lg">
       
-        <div style={{padding: "70px 0"}}>
+        <div style={{padding: "70px 0 0"}}>
 
             <div>
               <PageHeader
@@ -75,7 +75,7 @@ const HomeScreen = () => {
                     />   
           </Grid>
           <Grid container spacing={2}>
-            <Grid item sm={12} lg={3} style={{ margin: "0px auto", fontFamily: "sans-serif" }}>
+            <Grid item xs={12} sm={6} md={6} lg={3} style={{ margin: "0px auto", fontFamily: "sans-serif" }}>
                 <Footer />  
           </Grid>
           </Grid>

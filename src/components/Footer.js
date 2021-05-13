@@ -46,12 +46,11 @@ const Footer = () => {
            </div>}
                 
              <div >
-                <button onClick={handleDesigner} style={{
+                <div onClick={handleDesigner} style={{
                               color: "white",
-                              backgroundColor: "black",
-                                padding: "15px 15px",
-                                width: "100%",
-                }}> <div className="designer-btn tooltip">DESIGNER</div> </button>
+                              padding: "5px 10px",
+                              backgroundColor:"black"
+                }} className="designer-btn tooltip">DESIGNER</div>
               </div>
         </div>
     )
