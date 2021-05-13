@@ -19,7 +19,7 @@ const HomeScreen = () => {
       
       <Container maxWidth="lg">
       
-        <div style={{padding: "70px 0 0"}}>
+        <div style={{padding: "8vh 0px 0px"}}>
 
             <div>
               <PageHeader
@@ -39,22 +39,22 @@ const HomeScreen = () => {
 
       
       
-      <Grid container style={{display: "flex", justifyContent: "space-around"}}>
-              <PageButton
-                name="Birthday Cards"
-                icon={<CakeIcon />}
-                link="/birthday"
-              />
-              <PageButton
-                name="Tweet Cards"
-                icon={<PhotoSizeSelectActualIcon />}
-                link="/tweet"
-              />
-              <PageButton
-                name="Certificate Cards"
-                icon={<CardMembershipIcon />}
-                link="/certificate"
-              />   
+            <Grid container style={{display: "flex", justifyContent: "space-around"}}>
+                <PageButton
+                  name="Birthday Cards"
+                  icon={<CakeIcon />}
+                  link="/birthday"
+                />
+                <PageButton
+                  name="Tweet Cards"
+                  icon={<PhotoSizeSelectActualIcon />}
+                  link="/tweet"
+                />
+                <PageButton
+                  name="Certificate Cards"
+                  icon={<CardMembershipIcon />}
+                  link="/certificate"
+                />   
             </Grid>
 
             <Grid container spacing={2} style={{display: "flex", justifyContent: "space-around", marginBottom: "200px"}}>
@@ -74,6 +74,7 @@ const HomeScreen = () => {
                       link="/campaign"
                     />   
           </Grid>
+
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={6} lg={3} style={{ margin: "0px auto", fontFamily: "sans-serif" }}>
                 <Footer />  

@@ -8,7 +8,7 @@ const PageButton = (props) => {
         <div>
         <Grid  container spacing={2} style={{marginTop: "40px"}}>
             <Link to={props.link}>
-            <Grid item xs={12} md={12} sm={6} lg={6}>
+            <Grid item xs={12} md={6} sm={6} lg={6}>
               <button  onClick={props.click} className="btn" > {props.name}  {props.icon} </button>
                 </Grid>
             </Link>   

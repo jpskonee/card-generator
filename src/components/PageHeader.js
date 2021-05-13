@@ -10,10 +10,10 @@ const PageHeader = (props) => {
                         padding: '14px 0px',
                         color: "black",
                         width: "100%",
-                        marginBottom: "100px",
+                        marginBottom: "50px",
                         fontFamily: "'Press Start 2P', cursive",
                     
-                     }}> {props.title} <span> <AddAPhotoIcon  style={{fontSize: "6vw"}} /> </span> </div>
+                     }}> {props.title} <span> <AddAPhotoIcon  style={{fontSize: "6vw", color: "#876813"}} /> </span> </div>
         </div>
     )
 }

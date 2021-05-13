@@ -3,7 +3,7 @@ import React from 'react'
 const SampleCard = (props) => {
     return (
         <div>
-              <div style={{ flexWrap: "wrap", marginTop: "50px", marginBottom: "80px" }}>
+              <div style={{ flexWrap: "wrap", margin:"15px auto 80px" }}>
                   <span style={{ marginRight:"8px"}}>
                     <img className="sample-img" src={props.img1} alt="sample pix" height="300px" width="300px" />
                   </span>
