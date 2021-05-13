@@ -9,7 +9,7 @@ const PageButton = (props) => {
         <Grid  container spacing={2} style={{marginTop: "40px"}}>
             <Link to={props.link}>
             <Grid item xs={12} md={6} sm={6} lg={6}>
-              <button  onClick={props.click} className="btn" > {props.name}  {props.icon} </button>
+              <button type={props.type} onClick={props.click} className="btn" onSubmit={props.submit} > {props.name}  {props.icon} </button>
                 </Grid>
             </Link>   
         </Grid>

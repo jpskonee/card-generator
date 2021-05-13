@@ -140,8 +140,8 @@ select {
   border: 2px white groove;
   margin: 0.5vw 2vw;
   border-radius: 10px;
-  color: teal;
-  font-size: 16px;
+  color: #3c5554;
+  font-size: 14px;
 }
 
 textarea {
@@ -167,6 +167,6 @@ select:focus {
 }
 
 input::placeholder {
-  color: rgb(60, 85, 84);
-  font-size: 16px;
+  color: #3c5554;
+  font-size: 14px;
 }
