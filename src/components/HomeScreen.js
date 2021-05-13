@@ -74,9 +74,11 @@ const HomeScreen = () => {
                       link="/campaign"
                     />   
           </Grid>
-          <div style={{ margin: "0px auto", fontFamily: "sans-serif" }}>
+          <Grid container spacing={2}>
+            <Grid item sm={12} lg={3} style={{ margin: "0px auto", fontFamily: "sans-serif" }}>
                 <Footer />  
-          </div>
+          </Grid>
+          </Grid>
                  
         </div>
         </Container>
