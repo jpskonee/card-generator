@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/birthday" component={BirthdayHome} />
           <Route exact path="/quote" component={QuoteHome} />
-          <Route exact path="/complimentary" component={ComplimentaryHome} />
-          <Route exact path="/poster" component={TweetHome} />
+          <Route exact path="/buiness" component={ComplimentaryHome} />
+          <Route exact path="/tweet" component={TweetHome} />
           <Route exact path="/certificate" component={CertificateHome} />
           <Route exact path="/campaign" component={CampaignHome} />
 
