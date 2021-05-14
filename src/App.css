@@ -170,3 +170,9 @@ input::placeholder {
   color: #3c5554;
   font-size: 14px;
 }
+
+.slide-up {
+  transition-property: all;
+  transition-duration: 10s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}

@@ -25,14 +25,15 @@ const BirthdayCardCreator = () => {
         const file = e.target.files[0]
         if (file.size > 3200000) {
             alert("Image is too big! Choose another!");
-        }
-        const storageRef = app.storage().ref()
-        const fileRef = storageRef.child(file.name)
-        await fileRef.put(file)
-        setPhoto(await fileRef.getDownloadURL())
-        setTimeout(() => {
-           setDoneUpload(true) 
-        }, 2000 );
+        } else {
+            const storageRef = app.storage().ref()
+            const fileRef = storageRef.child(file.name)
+            await fileRef.put(file)
+            setPhoto(await fileRef.getDownloadURL())
+            setTimeout(() => {
+            setDoneUpload(true) 
+            }, 2000 )
+            };
     }
 
     //pushing the img to the storage
@@ -165,32 +166,51 @@ const BirthdayCardCreator = () => {
                     </Grid>
                     
                     <Grid item lg={8} md={8} sm={6} xs={12}>
-                            <div className="glass-bg" style={{margin: "auto 2vw auto 2vw"}}>
-                                <h3> Card </h3>
+                            <div className="glass-bg" style={{margin: "8px 2vw auto 2vw", position: "relative", padding: "20px auto"}}>
+                                    <div style={{marginTop: "3.5vh"
+                                    }}> <span style={{
+                                        background: "black",
+                                        color: "aqua",
+                                        fontSize: "16px",
+                                        fontFamily: "Press Start 2P",
+                                        fontWeight: "bold",
+                                        padding: "10px 20px",
+                                        borderRadius: "20px 0"
+                                    }}> Preview</span>  </div>
 
-                                <div> <img src={photo} alt="celebrant pics" height="300vh" width="250vh" /> </div>
+                                    <div style={{
+                                        margin: "4.5vh auto 5.5vh",
+                                        width: "47vh",
+                                        height: "47vh",
+                                        border: "2px teal groove",
+                                        backgroundColor: "white",
+                                        backgroundImage: "url('https://www.transparenttextures.com/patterns/dark-brick-wall.png')",
+                                    }}>
+                                        <div> <img src={photo} alt="celebrant pics" height="300vh" width="250vh" /> </div>
 
-                                <div>{cname}</div>
-                                <div>{nickname}</div>  
+                                        <div>{cname}</div>
+                                        <div>{nickname}</div>  
+                                        
+                                        <div> {day} {
+                                            (day === null) ? <div>  </div> :
+                                            (day === "1" || day === "21" || day === "31") ? <div> <sup> st  </sup> </div> :
+                                            (day === "2" || day === "22") ? <div> <sup> nd  </sup> </div> :
+                                            (day === "3" || day === "23") ? <div> <sup> rd  </sup> </div> : <div> <sup> th  </sup> </div>}
+                                        </div>
+                                    
+
+                                        <div>{month}</div>
+                                        <div>{bdmsg}</div>
+                                        <div>{wisher}</div>
+                                </div>    
                                 
-                                <div> {day} {
-                                    (day === null) ? <div>  </div> :
-                                    (day === "1" || day === "21" || day === "31") ? <div> <sup> st  </sup> </div> :
-                                    (day === "2" || day === "22") ? <div> <sup> nd  </sup> </div> :
-                                    (day === "3" || day === "23") ? <div> <sup> rd  </sup> </div> : <div> <sup> th  </sup> </div>}
-                                </div>
-                               
-
-                                <div>{month}</div>
-                                <div>{bdmsg}</div>
-                                <div>{wisher}</div>
                         </div>
                     </Grid>
                         
                     </Grid>
                 </div>          
                 
-                 {doneUpload && <button className="btn" onSubmit={pushData} style={{margin: "10vh auto 20vh"}}> Build <AddPhotoAlternateIcon /> </button>}
+                 {doneUpload && <button className="btn" onClick={pushData} style={{margin: "10vh auto 20vh"}}> Build <AddPhotoAlternateIcon /> </button>}
 
              </form>
             <Grid container spacing={2}>

@@ -22,9 +22,12 @@ const Footer = () => {
                 borderRadius: '10px',
               }}>
 
-                <div className="glass-bg"style={{
-                display: 'flex',
-                justifyContent: "center", width: "wrap-content"}}>
+                <div className="glass-bg slide-up"style={{
+                 display: 'flex',
+               justifyContent: "center",
+            width: "wrap-content",
+                transform: ""
+          }}>
                   <div style={{ marginRight: "15px", marginLeft: "15px", padding: "5px 5px" }}>
                   <a href="https://twitter.com/Agho_Dev" target="blank"> <TwitterIcon style={{fontSize:"25px", color:"#5db2f7"}} /> </a> 
               </div>
@@ -42,15 +45,16 @@ const Footer = () => {
                   </div>
                 </div>
               <hr />
-                <div style={{color: "white"}}> @AGHO.DEV </div>
+                <div style={{color: "black", textDecoration: "italics"}}> Software Engineer </div>
            </div>}
                 
              <div >
                 <div onClick={handleDesigner} style={{
                               color: "white",
-                              padding: "5px 10px",
-                              backgroundColor:"black"
-                }} className="designer-btn tooltip">DESIGNER</div>
+                              padding: "3px 15px",
+                              backgroundColor: "black",
+                              fontSize: "14px"
+                }} className="designer-btn tooltip"> Developer | @AGH0.DEV</div>
               </div>
         </div>
     )
